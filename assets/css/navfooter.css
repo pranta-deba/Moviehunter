@@ -1,0 +1,91 @@
+body {
+    background-color: #2a2c3b;
+    font-family: "Lato", sans-serif;
+}
+/*  */
+#form-search .form-search {
+    margin: 0 auto;
+    text-align: center;
+    font: bold 13px sans-serif;
+    max-width: 70%;
+    position: relative;
+}
+#form-search .form-search input {
+    width: 50%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 15px 14px 40px;
+    border: 1px solid #b6c3cd;
+    border-right: 0;
+    color: #4E565C;
+    outline: none;
+    /* -webkit-appearance: none; */
+}
+#form-search .form-search button {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: #3c3e3f;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    padding: 15px 22px;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#form-search .form-search button:hover {
+    background-color: red;
+}
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+    
+}
+#navbar_top .container .navbar-nav>li>a {
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-weight: 600;
+}
+#navbar_top .container .navbar-nav>li>a:hover {
+    color: red;
+}
+
+#navbar_top .container .navbar-nav .dropdown-menu>li>a {
+    text-transform: capitalize;
+    color: white;
+}
+
+#navbar_top .container .dropdown-menu>li>a:hover {
+    color: red;
+}
+
+#navbar_top .container .navbar-brand {
+    color: red;
+}
+@media screen and (min-width:777px) {
+    .nav-link {
+        padding: 20px 0;
+    }
+
+    .navbar {
+        padding: 0
+    }
+}
+/*  */
+#footer .bg-dark .container .justify-content-center .col-auto .button {
+    padding: 8px;
+    background-color:#3c3e3f ;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+#footer .bg-dark .container .justify-content-center .col-auto .button:hover {
+    background-color: red;
+    color: white;
+}

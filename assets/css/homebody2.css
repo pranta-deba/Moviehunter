@@ -1,0 +1,24 @@
+#MainContainer .row .col-lg-4 .row .col-12{
+    display: flex;
+    background-color: rgba(24, 24, 24, 0.951);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#MainContainer .row .col-lg-4 .row .col-12:hover{
+    background-color: rgba(0, 0, 0, 0.922);
+}
+#MainContainer .row .col-lg-4 .row .col-12 .text1{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: .8em;
+}
+#MainContainer .row .col-lg-4 .row .col-12 .text1:hover{
+    color: red;
+}
+#MainContainer .row .col-lg-4 .row .col-12 .text2{
+    color: white;
+    font-weight: 100;
+    font-size: .8em;
+    opacity: 60%;
+}
