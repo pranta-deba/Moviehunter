@@ -6,7 +6,8 @@
     position: relative;
 }
 #product-container .card .img-fluid{
-    opacity: 60%;
+    opacity: 50%;
+    
 }
 #product-container .card .card-body{
     position: absolute;

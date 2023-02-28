@@ -11,7 +11,7 @@ require "include/cheak-admin.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Categories</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="assets/css/sweetalert2.min.css" rel="stylesheet">
@@ -24,9 +24,10 @@ require "include/cheak-admin.php";
 
 
     <div class="container">
-        
+
     </div>
 
+ 
 
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

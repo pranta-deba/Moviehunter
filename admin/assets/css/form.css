@@ -1,0 +1,29 @@
+#form-container{
+    height: 100%;
+}
+#form-container form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+@media screen and (max-width: 700px) {
+    #form-container form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #form-container form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #form-container form{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 300px) {
+    #form-container form{
+        width: 100%;
+    }
+}
