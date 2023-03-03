@@ -26,7 +26,7 @@ require "include/cheak-admin.php";
 
     <div class="container  mt-5" id="form-container" style="height: 600px;">
         <h2 class="text-danger text-center m-4 fw-bold">Add Category</h2>
-        <form class="row g-3 needs-validation text-secondary mb-4" action="" method="post" enctype="multipart/form-data" novalidate>
+        <form class="row g-3 needs-validation text-secondary mb-4" action="include/addcat.php" method="post" enctype="multipart/form-data" novalidate>
             <div class="col-12 pt-3">
             </div>
             <div class="col-12">
@@ -41,7 +41,7 @@ require "include/cheak-admin.php";
             <div class="col-12">
                 <label for="validationCustomUsername" class="form-label">Image</label>
                 <div class="input-group has-validation">
-                    <input type="file" class="form-control" name="image" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <input type="file" class="form-control" name="images" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please import a Image.
                     </div>
@@ -62,7 +62,7 @@ require "include/cheak-admin.php";
                 <button class="btn btn-danger px-4" type="submit" name="add">Add</button>
             </div>
             <div class="col-12 text-center text-white">
-                <p class="text-center  mt-2 mb-0">See all cetagory? <a href="include/viewcat.php" class="fw-bold text-body"><u class="text-danger">See</u></a></p>
+                <p class="text-center  mt-2 mb-0">See all cetagory? <a href="viewcat.php" class="fw-bold text-body"><u class="text-danger">See</u></a></p>
             </div>
         </form>
     </div>

@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 };
 require "include/cheak-admin.php";
+require "../config.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,16 +27,20 @@ require "include/cheak-admin.php";
 
     <div class="container  mt-5" id="form-container" style="height: 600px;">
         <h2 class="text-danger text-center m-4 fw-bold">Add Sub Category</h2>
-        <form class="row g-3 needs-validation text-secondary mb-4" action="" method="post" enctype="multipart/form-data" novalidate>
+        <form class="row g-3 needs-validation text-secondary mb-4" action="include/addsubcat.php" method="post" enctype="multipart/form-data" novalidate>
             <div class="col-12 pt-3">
             </div>
             <div class="col-12">
                 <label for="validationCustom04" class="form-label">Category</label>
                 <select class="form-select" name="category_id" id="validationCustom04" required>
                     <option selected disabled value="">Choose...</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <?php
+                    $q = "select id,name from categories where 1";
+                    $qr = $connection->query($q);
+                    while ($row = $qr->fetch_assoc()) {
+                        echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>';
+                    }
+                    ?>
                 </select>
                 <div class="invalid-feedback">
                     Please select a Category.
@@ -53,7 +58,7 @@ require "include/cheak-admin.php";
             <div class="col-12">
                 <label for="validationCustomUsername" class="form-label">Image</label>
                 <div class="input-group has-validation">
-                    <input type="file" class="form-control" name="image" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <input type="file" class="form-control" name="images" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please import a Image.
                     </div>
@@ -74,13 +79,13 @@ require "include/cheak-admin.php";
                 <button class="btn btn-danger px-4" type="submit" name="add">Add</button>
             </div>
             <div class="col-12 text-center text-white">
-                <p class="text-center  mt-2 mb-0">See all sub cetagory? <a href="include/viewsubcat.php" class="fw-bold text-body"><u class="text-danger">See</u></a></p>
+                <p class="text-center  mt-2 mb-0">See all sub cetagory? <a href="viewsubcat.php" class="fw-bold text-body"><u class="text-danger">See</u></a></p>
             </div>
         </form>
     </div>
 
 
-   
+
 
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

@@ -137,6 +137,33 @@ require "../config.php";
                 </div>
             </div>
             <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Screnshot 1</label>
+                <div class="input-group has-validation">
+                    <input type="file" class="form-control" name="screenshot1" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please import a Image.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Screnshot 2</label>
+                <div class="input-group has-validation">
+                    <input type="file" class="form-control" name="screenshot2" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please import a Image.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Screnshot 3</label>
+                <div class="input-group has-validation">
+                    <input type="file" class="form-control" name="screenshot3" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please import a Image.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <label for="validationCustom04" class="form-label">Letest Item</label>
                 <select class="form-select" id="letest_items" name="letest_items" required>
                     <option selected disabled value="">Choose...</option>
@@ -175,6 +202,7 @@ require "../config.php";
             </div>
         </form>
     </div>
+    <div class="mb-5"></div>
 
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

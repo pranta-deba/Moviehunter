@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 };
 require "include/cheak-admin.php";
+require "../config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,8 +24,38 @@ require "include/cheak-admin.php";
     <?php include "include/navbar.php"; ?>
 
 
-    <div class="container">
+    <div class="table-responsive py-5 mx-3">
+        <h2 class="text-danger text-center pb-4">All Items</h2>
+        <table class="table table-dark table-hover text-white" style="font-size: .9em;">
+            <thead class="thead-dark text-info">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Created At</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $select = "select * from categories where 1";
+                $allcat = $connection->query($select);
+                while ($row = $allcat->fetch_assoc()) {
+                    echo "<tr>
+                    <th scope='row'>" . $row['id'] . "</th>
+                    <td>" . $row['name'] . "</td>
+                    <td><img width='50px' src='assets/images/" . $row['image'] . "'/></td>
+                    <td>" . $row['created_at'] . "</td>
+                    <td><a class='text-decoration-none text-primary' href='#'>Edit</a> | <a class='text-decoration-none text-danger' href='#'>Delete</a></td>
+                </tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
 
+    <div class="text-center p-4">
+        <a class="text-info h2" href="addcat.php"><i class="bi bi-plus-square-dotted"></i></a>
     </div>
 
  
