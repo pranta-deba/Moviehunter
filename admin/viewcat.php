@@ -25,7 +25,7 @@ require "../config.php";
 
 
     <div class="table-responsive py-5 mx-3">
-        <h2 class="text-danger text-center pb-4">All Items</h2>
+        <h2 class="text-danger text-center pb-4">All Categories</h2>
         <table class="table table-dark table-hover text-white" style="font-size: .9em;">
             <thead class="thead-dark text-info">
                 <tr>
@@ -33,7 +33,6 @@ require "../config.php";
                     <th scope="col">Name</th>
                     <th scope="col">Image</th>
                     <th scope="col">Created At</th>
-                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,7 +45,6 @@ require "../config.php";
                     <td>" . $row['name'] . "</td>
                     <td><img width='50px' src='assets/images/" . $row['image'] . "'/></td>
                     <td>" . $row['created_at'] . "</td>
-                    <td><a class='text-decoration-none text-primary' href='#'>Edit</a> | <a class='text-decoration-none text-danger' href='#'>Delete</a></td>
                 </tr>";
                 }
                 ?>

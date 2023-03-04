@@ -12,7 +12,7 @@ require "../config.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sub Categories</title>
+    <title>Users</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="assets/css/sweetalert2.min.css" rel="stylesheet">
@@ -25,27 +25,27 @@ require "../config.php";
 
 
     <div class="table-responsive py-5 mx-3">
-        <h2 class="text-danger text-center pb-4">All Sub Categories</h2>
+        <h2 class="text-danger text-center pb-4">All Users</h2>
         <table class="table table-dark table-hover text-white" style="font-size: .9em;">
             <thead class="thead-dark text-info">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Category Id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Image</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">'User = 1' , 'Admin = 2'</th>
                     <th scope="col">Created At</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                $select = "select * from subcategories where 1";
-                $allsubcat = $connection->query($select);
-                while ($row = $allsubcat->fetch_assoc()) {
+                $select = "select * from users where 1";
+                $allusers = $connection->query($select);
+                while ($row = $allusers->fetch_assoc()) {
                     echo "<tr>
                     <th scope='row'>" . $row['id'] . "</th>
-                    <td>" . $row['category_id'] . "</td>
-                    <td>" . $row['name'] . "</td>
-                    <td><img width='50px' src='assets/images/" . $row['image'] . "'/></td>
+                    <td>" . $row['username'] . "</td>
+                    <td>" . $row['email'] . "</td>
+                    <td>" . $row['role'] . "</td>
                     <td>" . $row['created_at'] . "</td>
                 </tr>";
                 }
@@ -55,11 +55,10 @@ require "../config.php";
     </div>
 
     <div class="text-center p-4">
-        <a class="text-info h2" href="addsubcat.php"><i class="bi bi-plus-square-dotted"></i></a>
+        <a class="text-info h2" href="addcat.php"><i class="bi bi-plus-square-dotted"></i></a>
     </div>
 
-
-   
+ 
 
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

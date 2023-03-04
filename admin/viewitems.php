@@ -71,7 +71,7 @@ require "../config.php";
                     <td><img width='50px' src='assets/images/" . $row['screenshot3'] . "'/></td>
                     <td>" . $row['letest_items'] . "</td>
                     <td>" . $row['rating'] . "</td>
-                    <td><a class='text-decoration-none text-primary' href='#'>Edit</a> | <a class='text-decoration-none text-danger' href='#'>Delete</a></td>
+                    <td><a class='text-decoration-none text-primary' href='edititems.php?id={$row['id']}'>Edit</a> | <a onclick=\"return confirm('Are you sure want to delete this?');\" class='text-decoration-none text-danger' href='deleteitems.php?id={$row['id']}'>Delete</a></td>
                 </tr>";
                 }
                 ?>
