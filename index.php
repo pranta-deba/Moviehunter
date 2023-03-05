@@ -45,42 +45,26 @@ $hotitems = $connection->query($selectQ);
                     ?>
                 </div><!-- carousel -->
 
-                <div class="hindi-subtitle"><!-- hindi-subtitle -->
-                    <h5 class="title">Bangla Subtitled</h5>
+                <div class="hindi-subtitle"><!-- Bollywood-->
+                    <h5 class="title">Bollywood</h5>
                     <div id="hindi-movie" class="owl-carousel">
-                        <div class="card me-2" style="width: 8rem;">
-                            <img src="assets/images/h1.png" class="card-img-top" alt="...">
+                        <?php
+                        $selectquery = "select * from items where subcategory_id='2' order by created_at desc limit 20";
+                        $bollywood = $connection->query($selectquery);
+                        $run = "";
+                        while ($row = $bollywood->fetch_assoc()) {
+                            $run .= '<div class="card me-2" style="width: 8rem;">
+                            <img src="admin/assets/images/' . $row['image'] . '" class="card-img-top" alt="...">
                             <div class="text">
-                                <a href="#" class="card-text">Some quick example text to build on.</a>
+                                <a href="#" class="card-text">' . $row['name'] . '</a>
                             </div>
-                        </div>
-                        <div class="card me-2" style="width: 8rem;">
-                            <img src="assets/images/h1.png" class="card-img-top" alt="...">
-                            <div class="text">
-                                <a href="#" class="card-text">Some quick example text to build on.</a>
-                            </div>
-                        </div>
-                        <div class="card me-2" style="width: 8rem;">
-                            <img src="assets/images/h1.png" class="card-img-top" alt="...">
-                            <div class="text">
-                                <a href="#" class="card-text">Some quick example text to build on.</a>
-                            </div>
-                        </div>
-                        <div class="card me-2" style="width: 8rem;">
-                            <img src="assets/images/h1.png" class="card-img-top" alt="...">
-                            <div class="text">
-                                <a href="#" class="card-text">Some quick example text to build on.</a>
-                            </div>
-                        </div>
-                        <div class="card me-2" style="width: 8rem;">
-                            <img src="assets/images/h1.png" class="card-img-top" alt="...">
-                            <div class="text">
-                                <a href="#" class="card-text">Some quick example text to build on.</a>
-                            </div>
-                        </div>
+                        </div>';
+                        }
+                        echo $run;
+                        ?>
                     </div>
                     <hr>
-                </div><!-- hindi-subtitle -->
+                </div><!-- Bollywood -->
 
                 <div class="letest-movies"><!-- letest-movies -->
                     <h5 class="title">Latest Movies</h5>

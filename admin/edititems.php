@@ -181,7 +181,7 @@ $p = $r->fetch_assoc();
             <div class="col-md-4">
                 <label for="validationCustomUsername" class="form-label">Rating</label>
                 <div class="input-group has-validation">
-                    <input type="text" class="form-control" name="rating" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required value="<?= $p['name'] ?>">
+                    <input type="text" class="form-control" name="rating" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required value="<?= $p['rating'] ?>">
                     <div class="invalid-feedback">
                         Please choose a rating.
                     </div>

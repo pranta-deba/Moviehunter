@@ -34,6 +34,7 @@ require "../config.php";
                     <th scope="col">Email</th>
                     <th scope="col">'User = 1' , 'Admin = 2'</th>
                     <th scope="col">Created At</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,15 +48,12 @@ require "../config.php";
                     <td>" . $row['email'] . "</td>
                     <td>" . $row['role'] . "</td>
                     <td>" . $row['created_at'] . "</td>
+                    <td><a onclick=\"return confirm('Are you sure want to delete this?');\" class='text-decoration-none text-danger' href='deleteusers.php?id={$row['id']}'>Delete</a></td>
                 </tr>";
                 }
                 ?>
             </tbody>
         </table>
-    </div>
-
-    <div class="text-center p-4">
-        <a class="text-info h2" href="addcat.php"><i class="bi bi-plus-square-dotted"></i></a>
     </div>
 
  
