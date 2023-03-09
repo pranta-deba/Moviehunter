@@ -1,0 +1,62 @@
+.hindi-subtitle .title {
+    padding: 3px;
+    border-left: solid 2px red;
+}
+#hindi-movie .card {
+    background-color: #2a2c3b;
+}
+#hindi-movie .card .text .card-text{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-size: .7em;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+#hindi-movie .card .text{
+    overflow: hidden;
+}
+#hindi-movie .card .text .card-text:hover{
+    color: red;
+}
+#hindi-movie .card{
+    padding: 6px;
+    margin-right: 10px;
+}
+ .row .col-lg-8{
+    border-right: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    border-top: 1px solid rgb(82, 82, 82);
+    margin-top: 15px;
+}
+ .row .col-lg-4{
+    border-top: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    margin-top: 15px;
+}
+.row .col-lg-4 .row .col-12{
+    display: flex;
+    background-color: rgba(24, 24, 24, 0.951);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.row .col-lg-4 .row .col-12:hover{
+    background-color: rgba(0, 0, 0, 0.922);
+}
+.row .col-lg-4 .row .col-12 .text1{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: .8em;
+}
+.row .col-lg-4 .row .col-12 .text1:hover{
+    color: red;
+}
+.row .col-lg-4 .row .col-12 .text2{
+    color: white;
+    font-weight: 100;
+    font-size: .8em;
+    opacity: 60%;
+}

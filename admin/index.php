@@ -24,7 +24,7 @@ require "../config.php"
 
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark pb-2"">
         <div class=" container">
-        <a class="navbar-brand" href="index.php"><span class="text-info h4">A</span><span class="text-info">dmin</span><span class="text-danger h4">Panel</span></a>
+        <a class="navbar-brand" href="index.php"><span class="text-info h4">A</span><span class="text-info">dmin</span><span class="text-danger h4"><i class="bi bi-house-gear-fill"></i>Panel</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -72,7 +72,7 @@ require "../config.php"
     </div>
 
     <div class="container mt-4">
-        <div class="row justify-content-center align-items-center m-2 text-white text-center">
+        <div class="row  justify-content-center align-items-center m-2 text-white text-center">
             <div class="col-lg-3 col-md-6 col-sm-12 m-4">
                 <?php
                 $query1 = "select count(*) as total from items where 1";

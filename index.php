@@ -34,7 +34,7 @@ $hotitems = $connection->query($selectQ);
                         $items .= '<div class="card bg-dark">
                         <img src="admin/assets/images/' . $row['image'] . '" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <a href="#" class="text-decoration-none">' . $row['name'] . '</a>
+                            <a href="downloadpage.php?id=' . $row['id'] . '" class="text-decoration-none">' . $row['name'] . '</a>
                             <div class="text-white year">
                                 <p class="">' . $row['year'] . '</p>
                             </div>
@@ -56,7 +56,7 @@ $hotitems = $connection->query($selectQ);
                             $run .= '<div class="card me-2" style="width: 8rem;">
                             <img src="admin/assets/images/' . $row['image'] . '" class="card-img-top" alt="...">
                             <div class="text">
-                                <a href="#" class="card-text">' . $row['name'] . '</a>
+                                <a href="downloadpage.php?id=' . $row['id'] . '" class="card-text">' . $row['name'] . '</a>
                             </div>
                         </div>';
                         }
@@ -78,7 +78,7 @@ $hotitems = $connection->query($selectQ);
                             <div class="card" style="width: 9rem;">
                                 <img src="admin/assets/images/' . $row['image'] . '" class="card-img-top" alt="...">
                                 <div class="text">
-                                    <a href="#" class="card-text">' . $row['name'] . '</a>
+                                    <a href="downloadpage.php?id=' . $row['id'] . '" class="card-text">' . $row['name'] . '</a>
                                     <p class="sal">' . $row['year'] . '</p>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ $hotitems = $connection->query($selectQ);
                     while ($row = $lit->fetch_assoc()) {
                         $itm .= '<div class="col-12">
                         <img src="admin/assets/images/' . $row['image'] . '" class="card-img-top m-2" alt="..." style="width: 4rem;">
-                        <p class="m-2"><a href="#" class="text1">' . $row['name'] . '</a> <br>
+                        <p class="m-2"><a href="downloadpage.php?id=' . $row['id'] . '" class="text1">' . $row['name'] . '</a> <br>
                         <span class="text2">' . $row['year'] . '</span><br>
                             <span class="text2"><i class="bi bi-star"></i>  ' .  $row['rating'] . '</span>
                         </p>

@@ -2,14 +2,14 @@
     <div class="container" id="form-search">
         <form class="form-search" method="get" action="#">
             <input type="search" name="search" placeholder="search here for..">
-            <button type="submit">Search</button>
+            <button type="submit"><i class="bi bi-search"></i></button>
         </form>
     </div>
 </div>
 
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark pb-2"">
         <div class=" container">
-    <a class="navbar-brand" href="index.php"><span class="text-info h4">M</span><span class="text-info">ovie</span><span class="text-danger h4">Hunter</span></a>
+    <a class="navbar-brand" href="index.php"><span class="text-info h4">M</span><span class="text-info">ovie</span><span class="text-danger h4"><i class="bi bi-lightning-charge"></i>Hunter</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
