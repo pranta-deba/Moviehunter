@@ -1,6 +1,6 @@
 <div class="bg-dark pt-2">
     <div class="container" id="form-search">
-        <form class="form-search" method="get" action="searchresult.php">
+        <form class="form-search" method="post" action="searchresult.php">
             <input type="text" name="value" placeholder="search here for.." style="background-color: rgb(220, 220, 220);">
             <button type="submit" name="search"><i class="bi bi-search"></i></button>
         </form>

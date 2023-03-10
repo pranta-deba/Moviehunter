@@ -92,7 +92,7 @@ $hotitems = $connection->query($selectQ);
                 <div class="vlog-container"><!-- vlog -->
                     <div class="vlog">
                         <h5 class="title1">Last entries</h5>
-                        <a href="#" class="title2">See all</a>
+                        <a href="javascript:void(0);" class="title2">See all</a>
                     </div>
                     <div class="row m-4">
                         <div class="col">

@@ -45,7 +45,7 @@ require "../config.php";
                     <th scope='row'>" . $row['id'] . "</th>
                     <td>" . $row['category_id'] . "</td>
                     <td>" . $row['name'] . "</td>
-                    <td><img width='50px' src='assets/images/" . $row['image'] . "'/></td>
+                    <td><img width='70px' src='assets/images/" . $row['image'] . "'/></td>
                     <td>" . $row['created_at'] . "</td>
                 </tr>";
                 }

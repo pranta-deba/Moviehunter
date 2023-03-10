@@ -53,12 +53,13 @@ if (session_status() === PHP_SESSION_NONE) {
         <form class="row g-3 needs-validation text-secondary mb-4" action="" method="post" novalidate>
             <div class="col-12 pt-3">
                 <p class="text-center text-success"><?php echo $_GET['m'] ?? ""; ?></p>
+                <p class="text-center text-danger"><?php echo $_GET['mgs'] ?? ""; ?></p>
             </div>
             <div class="col-12">
                 <label for="validationCustomUsername" class="form-label">Email</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text text-danger" id="inputGroupPrepend">@</span>
-                    <input type="email" name="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <input type="email" name="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" value="<?php echo $_GET['email'] ?? ""; ?>" required>
                     <div class="invalid-feedback">
                         Please Enter a Email.
                     </div>

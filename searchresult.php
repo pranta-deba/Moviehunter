@@ -2,9 +2,9 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 };
-if (isset($_GET['search'])) {
+if (isset($_POST['search'])) {
     require "config.php";
-    $searchvalue = $_GET['value'];
+    $searchvalue = $_POST['value'];
 
     $sql = "SELECT * FROM items WHERE name like '%$searchvalue%' limit 1";
     $res = $connection->query($sql);
