@@ -21,7 +21,7 @@
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example2" class="form-control" placeholder="Email Address"/>
+              <input type="email" id="form5Example2" class="form-control" placeholder="Email Address" style="background-color: rgb(220, 220, 220);"/>
             </div>
           </div>
           <!--Grid column-->

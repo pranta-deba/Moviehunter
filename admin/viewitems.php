@@ -25,7 +25,7 @@ require "../config.php";
 
     <div class="table-responsive py-5 mx-3">
         <h2 class="text-danger text-center pb-4">All Items</h2>
-        <table class="table table-dark table-hover text-white" style="font-size: .9em;">
+        <table class="table table-dark table-hover text-white" style="font-size: .7em;">
             <thead class="thead-dark text-info">
                 <tr>
                     <th scope="col">ID</th>

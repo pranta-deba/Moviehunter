@@ -21,7 +21,7 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Deteils</title>
     <?php include "include/cssplagin.php"; ?><!-- css all plagin -->
     <link href="assets/css/navfooter.css" rel="stylesheet" />
     <link href="assets/css/dpage.css" rel="stylesheet" />
@@ -53,25 +53,27 @@ if (isset($_GET['id'])) {
                 </div><!-- 1 -->
                 <hr>
                 <div class="nav2" id="typelink"><!-- 2 -->
-                    <a href="javascript:void(0);" class="activebg">Info</a>
-                    <a href="javascript:void(0);">Links</a>
-                    <a href="javascript:void(0);">Trailer</a>
+                    <a href="javascript:void(0);" class="activebg" id="Info">Info</a>
+                    <a href="javascript:void(0);" id="Links">Links</a>
+                    <a href="javascript:void(0);" id="Trailer">Trailer</a>
                 </div><!-- 2 -->
                 <hr>
-                <div class="Screenshots"><!-- 3 -->
-                    <p><i>Screenshots</i></p>
-                    <div><img src="admin/assets/images/<?= $row['screenshot1'] ?>"></div>
-                    <div><img src="admin/assets/images/<?= $row['screenshot2'] ?>"></div>
-                    <div><img src="admin/assets/images/<?= $row['screenshot3'] ?>"></div>
-                </div><!-- 3 -->
-                <div class="backside"><!-- 4 -->
-                    <p><?= $row['description'] ?></p>
-                </div><!-- 4 -->
-                <hr>
-                <div class="downloadlinks"><!-- 5 -->
+                <div id="Screenshots">
+                    <div class="Screenshots"><!-- 3 -->
+                        <p><i>Screenshots</i></p>
+                        <div><img src="admin/assets/images/<?= $row['screenshot1'] ?>"></div>
+                        <div><img src="admin/assets/images/<?= $row['screenshot2'] ?>"></div>
+                        <div><img src="admin/assets/images/<?= $row['screenshot3'] ?>"></div>
+                    </div><!-- 3 -->
+                    <div class="backside"><!-- 4 -->
+                        <p><?= $row['description'] ?></p>
+                    </div><!-- 4 -->
+                    <hr>
+                </div>
+                <div class="downloadlinks" id="downloadlinks"><!-- 5 -->
                     <div class="Links">
                         <p>Links</p>
-                        <p>Links</p>
+                        <p>Download</p>
                     </div>
                     <div class="Linksside">
                         <div class="donelink">
@@ -82,14 +84,14 @@ if (isset($_GET['id'])) {
                             while ($row = $rrrr->fetch_assoc()) {
                                 $iiiii = ' <h6>' . $row['name'] . '</h6>
                                 <h6>1080p</h6>
-                                <a href="download.php?id=' . $row['id'] . '">Download</a>
+                                <a href="include/loadingdrivelink.php?id=' . $row['id'] . '">Download</a>
                                 <h6>' . $row['name'] . '</h6>
                                 <h6>720p</h6>
-                                <a href="download.php?id=' . $row['id'] . '">Download</a>';
+                                <a href="include/loadingdrivelink.php?id=' . $row['id'] . '">Download</a>';
                             }
                             echo $iiiii;
                             ?>
-                           
+
                         </div>
                     </div>
                 </div><!-- 5 -->
@@ -161,6 +163,7 @@ if (isset($_GET['id'])) {
     <script src="assets/js/script.js"></script>
     <script src="assets/js/highlightnav.js"></script>
     <script src="assets/js/owl3.js"></script>
+    <script src="assets/js/hideshow.js"></script>
 </body>
 
 </html>
