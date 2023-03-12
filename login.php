@@ -14,6 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
     if($record->num_rows > 0){
         $result = $record->fetch_assoc();
+
         if(password_verify($password,$result['password'])){
             $_SESSION['userid'] = $result['id'];
             $_SESSION['username'] = $result['username'];
@@ -25,6 +26,8 @@ if (session_status() === PHP_SESSION_NONE) {
             if($result['role'] == "2"){
                 header("location:admin/index.php");
             };
+        }else{
+            header("location:login.php?email=$email&mgs=Password not match");
         }
     }else{
         header("location:register.php?m=Please Register Now!");

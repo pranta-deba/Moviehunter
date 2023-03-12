@@ -16,36 +16,31 @@
     <div class="collapse navbar-collapse" id="main_nav">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.php"> Home </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> trailer </a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> movies </a>
+                <a class="nav-link  dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown"> Catelog </a>
                 <ul class="dropdown-menu dropdown-menu-right bg-dark">
-                    <li><a class="dropdown-item" href="#"> Hollywood</a></li>
-                    <li><a class="dropdown-item" href="#"> Bollywood</a></li>
-                    <li><a class="dropdown-item" href="#"> Letest Released</a></li>
-                    <li><a class="dropdown-item" href="#"> Adult Movies </a></li>
-                    <li><a class="dropdown-item" href="#">anime</a></li>
-                    <li><a class="dropdown-item" href="#">imdb top movies</a></li>
+                    <li><a class="dropdown-item" href="#"> Movie </a></li>
+                    <li><a class="dropdown-item" href="#"> Web Series </a></li>
+                    <li><a class="dropdown-item" href="#"> TV Show </a></li>
+                    <li><a class="dropdown-item" href="#"> Amazon Prime Video </a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> genre </a>
+                <a class="nav-link  dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown"> Movies </a>
                 <ul class="dropdown-menu dropdown-menu-right bg-dark">
-                    <li><a class="dropdown-item" href="#">action</a></li>
-                    <li><a class="dropdown-item" href="#">adventure</a></li>
-                    <li><a class="dropdown-item" href="#">animated</a></li>
-                    <li><a class="dropdown-item" href="#">comedy</a></li>
-                    <li><a class="dropdown-item" href="#">crime</a></li>
-                    <li><a class="dropdown-item" href="#">fantasy</a></li>
-                    <li><a class="dropdown-item" href="#">horror</a></li>
-                    <li><a class="dropdown-item" href="#">mystery</a></li>
-                    <li><a class="dropdown-item" href="#">sci-fi</a></li>
-                    <li><a class="dropdown-item" href="#">romance</a></li>
-                    <li><a class="dropdown-item" href="#">documentary</a></li>
+                    <li><a class="dropdown-item" href="#">Hollywood</a></li>
+                    <li><a class="dropdown-item" href="#">Bollywood</a></li>
+                    <li><a class="dropdown-item" href="#">Anime</a></li>
+                    <li><a class="dropdown-item" href="#">Hollywood Web Series</a></li>
+                    <li><a class="dropdown-item" href="#">Bollywood Web Series</a></li>
+                    <li><a class="dropdown-item" href="#">Hindi Dubbed</a></li>
+                    <li><a class="dropdown-item" href="#">Hindi Tv Show</a></li>
+                    <li><a class="dropdown-item" href="#">English Tv Show</a></li>
+                    <li><a class="dropdown-item" href="#">Show Time</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">web series</a>
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">web series</a>
                 <ul class="dropdown-menu dropdown-menu-left bg-dark">
                     <li><a class="dropdown-item" href="#">hindi dubbed</a></li>
                     <li><a class="dropdown-item" href="#">english</a></li>
@@ -55,7 +50,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> ott </a>
+                <a class="nav-link  dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown"> ott </a>
                 <ul class="dropdown-menu dropdown-menu-right bg-dark">
                     <li><a class="dropdown-item" href="#">netflix</a></li>
                     <li><a class="dropdown-item" href="#">amazon prime video</a></li>

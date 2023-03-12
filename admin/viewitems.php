@@ -25,7 +25,7 @@ require "../config.php";
 
     <div class="table-responsive py-5 mx-3">
         <h2 class="text-danger text-center pb-4">All Items</h2>
-        <table class="table table-dark table-hover text-white" style="font-size: .7em;">
+        <table class="table table-dark table-hover text-white" style="font-size: .8em;">
             <thead class="thead-dark text-info">
                 <tr>
                     <th scope="col">ID</th>
@@ -40,9 +40,6 @@ require "../config.php";
                     <th scope="col">Type</th>
                     <th scope="col">Drive Link</th>
                     <th scope="col">Image</th>
-                    <th scope="col">SS1</th>
-                    <th scope="col">SS2</th>
-                    <th scope="col">SS3</th>
                     <th scope="col">Letest</th>
                     <th scope="col">Rating</th>
                     <th scope="col">Action</th>
@@ -66,9 +63,6 @@ require "../config.php";
                     <td>" . $row['type'] . "</td>
                     <td>" . $row['drive_link'] . "</td>
                     <td><img width='50px' src='assets/images/" . $row['image'] . "'/></td>
-                    <td><img width='50px' src='assets/images/" . $row['screenshot1'] . "'/></td>
-                    <td><img width='50px' src='assets/images/" . $row['screenshot2'] . "'/></td>
-                    <td><img width='50px' src='assets/images/" . $row['screenshot3'] . "'/></td>
                     <td>" . $row['letest_items'] . "</td>
                     <td>" . $row['rating'] . "</td>
                     <td><a class='text-decoration-none text-primary' href='edititems.php?id={$row['id']}'>Edit</a> | <a onclick=\"return confirm('Are you sure want to delete this?');\" class='text-decoration-none text-danger' href='deleteitems.php?id={$row['id']}'>Delete</a></td>

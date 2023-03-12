@@ -5,6 +5,10 @@ if (session_status() === PHP_SESSION_NONE) {
 require "config.php";
 $selectQ = "select * from items where letest_items='1' order by created_at desc limit 20";
 $hotitems = $connection->query($selectQ);
+
+$selectcategories = "select name from categories where 1";
+$recordcategories = $connection->query($selectcategories);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
